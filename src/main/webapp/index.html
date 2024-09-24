@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spring Flowers School</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="header">
+        <img src="school_logo.jpg" alt="School Logo" class="logo">
+        <h1>Welcome to Spring Flowers School</h1>
+    </div>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="studentprofile.html">Student Profile</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div class="welcome-message">
+        <h2>Welcome, Students!</h2>
+        <p>We're excited to have you as part of our online portal. Please explore the menu to see your profile and other options.</p>
+    </div>
+
+    <!-- Search Form -->
+    <div class="search-student">
+        <h3>Search Student Details</h3>
+        <form action="SearchStudentServlet" method="post">
+            <label for="studentId">Enter Student ID:</label>
+            <input type="text" id="studentId" name="studentId" required>
+            <button type="submit">Search</button>
+        </form>
+    </div>
+
+</body>
+</html>
